@@ -1,0 +1,15 @@
+@mixin flexMixin($alignItems, $justifyContent, $flexDirection) {
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+    flex-direction: $flexDirection;
+}
+
+@mixin primaryButton {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: rgb(49,211,92);
+    background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
+}
