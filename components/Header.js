@@ -26,8 +26,8 @@ function Header() {
             <div className={`${headerStyles.headerHero}`}>
                 {/* Content */}
                 <div>
-                    <h1>Next generation digital banking</h1>
-                    <p>Take your financial life online. Your EasyBank account <br /> will be a one-stop-shop for spending, saving,<br /> budgeting, investing, and much more.</p>
+                    <h1>Next generation<br />digital banking</h1>
+                    <p>Take your financial life online. Your EasyBank account<br />will be a one-stop-shop for spending, saving,<br /> budgeting, investing, and much more.</p>
                     <button>Request Invite</button>
                 </div>
 
