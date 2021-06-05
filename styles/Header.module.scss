@@ -1,0 +1,29 @@
+@import "utilities/variables";
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15%;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: $grayishBlue;
+        font-size: medium;
+
+        li {
+            margin: auto 20px;
+        }
+    }
+
+    button {
+        padding: 12px 30px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        background: rgb(49,211,92);
+background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
+    }
+}
