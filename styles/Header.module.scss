@@ -2,49 +2,57 @@
 @import "utilities/mixins";
 
 .header {
-    @include flexMixin(center, space-between, row);
-    padding: 5px 10%;
+  @include flexMixin(center, space-between, row);
+  padding: 5px 10%;
 
-    ul {
-        @include flexMixin(center, space-evenly, row);
-        color: $grayishBlue;
-        font-size: medium;
+  ul {
+    @include flexMixin(center, space-evenly, row);
+    color: $grayishBlue;
+    font-size: medium;
 
-        li {
-            @include flexMixin(center, space-evenly, row);
-            margin: 0 15px;
-            height: 50px;
-        }
+    li {
+      @include flexMixin(center, space-evenly, row);
+      margin: 0 15px;
+      height: 50px;
     }
+  }
 
-    button {
-        @include primaryButton;
-    }
+  button {
+    @include primaryButton;
+  }
 }
 
 .headerHero {
-    @include flexMixin(center, space-between, row);
-    background-color: $lightGrayishBlue;
+  @include flexMixin(center, space-between, row);
+  overflow-x: hidden;
+  background-color: $lightGrayishBlue;
+  position: relative;
 
-    div {
-        @include flexMixin(flex-start, space-between, column);
-        width: 50%;
-        padding: 6% 10%;
+  div:nth-child(1) {
+    @include flexMixin(flex-start, space-between, column);
+    width: 50%;
+    padding: 6% 10%;
 
-        h1 {
-            font-weight: lighter;
-            font-size: 800;
-        }
-
-        p {
-            font-weight: 300;
-            font-size: 14px;
-            color: $grayishBlue;
-        }
-
-        button {
-            @include primaryButton;
-            margin: 20px 0;
-        }
+    h1 {
+      font-weight: lighter;
+      font-size: 800;
     }
+
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      color: $grayishBlue;
+    }
+
+    button {
+      @include primaryButton;
+      margin: 20px 0;
+    }
+  }
+
+  span {
+    position: absolute !important;
+    top: -35%;
+    right: -15%;
+  }
 }
